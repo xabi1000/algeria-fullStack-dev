@@ -6,24 +6,24 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     permissions:
-      id-token: write # Necesario para la autentificación con Deno Deploy
-      contents: read # Necesario para clonar el repositorio
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
 
     steps:
-      - name: Clonar el repositorio
+      - name: algeria-fullStack-dev
         uses: actions/checkout@v4
 
-      # ¿No usas npm? Cambia `npm ci` por `yarn install` o `pnpm i`.
-      - name: Instalar las dependencias
+      # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
+      - name: Install dependencies
         run: pnpm i
 
-      # ¿No usas npm? Cambia `npm run build` por `yarn build` o `pnpm run build`.
-      - name: Construir Astro
+      # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
+      - name: Build Astro
         run: pnpm run build
 
-      - name: Subir a Deno Deploy
+      - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: my-deno-project # TODO: sustituir por el nombre del proyecto Deno Deploy
+          project: algeria-fullStack-dev # TODO: replace with Deno Deploy project name
           entrypoint: server/entry.mjs
           root: dist
