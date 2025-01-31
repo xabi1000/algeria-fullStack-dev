@@ -1,0 +1,24 @@
+{
+  "title": "Conception et Développement Web",
+  "slug": "web-design-and-development",
+  "description": "Nous créons des sites web modernes, rapides et adaptés à vos besoins.",
+  "icon": "&#x1f578;",
+  "details": {
+    "overview": "Nous proposons des solutions web sur mesure, allant des sites informatifs aux plateformes complexes.",
+    "features": [
+      "Design responsive optimisé pour les appareils mobiles.",
+      "Optimisation pour les moteurs de recherche (SEO).",
+      "Intégration avec des systèmes de gestion de contenu (CMS)."
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Astro",
+      "Node.js"
+    ],
+    "objective": "Si votre objectif est d'avoir un site web moderne, rapide et adapté à vos besoins, nous pouvons vous aider à le construire de A à Z ou à améliorer votre site existant."
+  },
+  "metaDescription": "Créez un site web moderne et rapide adapté à vos besoins avec nos services de conception et développement web. Nous sommes spécialisés dans le design responsive et le SEO."
+}

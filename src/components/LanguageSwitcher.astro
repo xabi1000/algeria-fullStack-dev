@@ -1,0 +1,135 @@
+---
+interface Props {
+    lang: "en" | "es" | "fr" | "ar";
+}
+const LANGUAGES = ["en", "es", "fr", "ar"];
+// 1. Definir los idiomas soportados
+export async function getStaticPaths() {
+    return [
+        { params: { lang: "en" } },
+        { params: { lang: "es" } },
+        { params: { lang: "fr" } },
+        { params: { lang: "ar" } },
+    ];
+}
+
+// 2. Obtener idioma de la URL
+const { lang } = Astro.params;
+---
+
+<!-- Selector de idioma -->
+<div class="lang-switcher-container">
+    <select id="langSwitcher">
+        <!-- default selected option     -->
+        {LANGUAGES.map((langOption) => (
+            <option value={langOption} selected={lang === langOption}>
+                {langOption === "en"
+                    ? "🇬🇧"
+                    : langOption === "es"
+                    ? "🇪🇸"
+                    : langOption === "fr"
+                    ? "🇫🇷"
+                    : "🇵🇸"}
+            </option>
+        ))}
+    </select>
+</div>
+
+<script>
+    const langSwitcher = document.getElementById('langSwitcher');
+
+    if (langSwitcher) {
+        langSwitcher.addEventListener('change', (e) => {
+            const target = e.target;
+            if (target) {
+                const selectElement = target as HTMLSelectElement;
+                const newLang = selectElement.value;
+
+                // Obtener la ruta actual (ejemplo: /es/blog/post-1)
+                const currentPath = window.location.pathname;
+
+                // Reemplazar el segmento del idioma en la ruta
+                const newPath = currentPath.replace(
+                    /^\/(en|es|fr|ar)/,
+                    `/${newLang}`
+                );
+
+                // Redirigir a la nueva ruta
+                window.location.pathname = newPath;
+            }
+        });
+    }
+</script>
+
+
+<style>
+.lang-switcher-container {
+    position: relative;
+
+}
+
+/* Estilos base del selector */
+#langSwitcher {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: clamp(55px, 7dvw, 75px);
+    padding:  0.5rem;
+    border: 2px solid var(--text-color);
+    border-radius: 7px;
+    background-color: #f8fafc00;
+    color: #1e293b;
+    font-size: var(--font-small);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+/* Hover y focus states */
+    &:hover {
+      border-color: var(--accent-color);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+}
+
+/* Estilos para las opciones */
+
+#langSwitcher option {
+    padding: 0.5em 1em;
+    background: var(--secondary-color);
+    font-size: var(--font-small);
+    text-align: center;
+}
+
+
+#langSwitcher option[disabled] {
+  font-size:0.7rem;
+  color: var(--accent-color);
+}
+
+#langSwitcher option:checked {
+    /* background-color: #058b1b; */
+    color: var(--text-color);
+}
+
+/* Estilos específicos para banderas */
+#langSwitcher option:not([disabled]) {
+    font-size: var(--font-small);
+    padding: 0.5em 1em;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    #langSwitcher {
+        padding: 0.6em 2em 0.6em 1em;
+
+    }
+
+    .lang-switcher-container::after {
+        right: 0.8em;
+    }
+}
+</style>

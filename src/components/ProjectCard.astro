@@ -1,0 +1,68 @@
+---
+// src/components/ProjectCard.astro
+const { title, description, image, link, id, testimonial, stars } = Astro.props;
+---
+
+<div class="project-card" style={`anchor-name: --project${id};`}>
+  <img src={image} alt={title} class="project-image" />
+  <h3>{title}</h3>
+  <p>{description}</p>
+
+  <button popovertarget={id} popovertargetaction="toggle">Testimonial</button>
+
+  <div id={id} popover style={`position-anchor: --project${id};`}>
+    <p>
+      <strong>{title}</strong>:
+    </p>
+    <p>"{testimonial}"</p>
+    <p>{stars}</p>
+  </div>
+</div>
+
+<style>
+  .project-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto min-content;
+    border: 1px solid #eaeaea;
+    border-radius: 7px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .project-image {
+    border-radius: 7px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* Estilos del popover */
+  button {
+    margin-top: auto;
+  }
+
+  [popover] {
+    background: #2222221a;
+    backdrop-filter: blur(17px);
+    color: gold;
+    position: absolute;
+    border-radius: 0 0 7px 7px;
+    transform: translateY(-99%);
+    inset: 0;
+    margin: 0;
+  }
+
+  [popover]:popover-open {
+    top: anchor(bottom);
+    left: anchor(left);
+    right: anchor(right);
+    border: none;
+  }
+
+  [popover]::backdrop {
+    inset: auto;
+  }
+</style>

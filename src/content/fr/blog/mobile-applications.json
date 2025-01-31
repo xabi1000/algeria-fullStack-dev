@@ -1,0 +1,22 @@
+{
+  "title": "Applications Mobiles",
+  "slug": "mobile-applications",
+  "description": "Nous développons des applications natives et hybrides pour iOS et Android.",
+  "icon": "📱",
+  "details": {
+    "overview": "Nous créons des applications mobiles offrant une expérience utilisateur exceptionnelle.",
+    "features": [
+      "Développement natif pour iOS (Swift) et Android (Kotlin).",
+      "Applications hybrides avec React Native.",
+      "Intégration avec des APIs et services cloud."
+    ],
+    "technologies": [
+      "Swift",
+      "Kotlin",
+      "React Native",
+      "Firebase"
+    ],
+    "objective": "Si votre objectif est de créer une application mobile pour iOS, Android ou les deux, nous pouvons vous aider à la concevoir, la développer et la lancer avec la meilleure qualité et fonctionnalité."
+  },
+  "metaDescription": "Développez des applications mobiles natives et hybrides pour iOS et Android avec nos services experts. Nous nous concentrons sur l'expérience utilisateur et l'intégration fluide."
+}

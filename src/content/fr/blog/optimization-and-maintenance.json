@@ -1,0 +1,22 @@
+{
+  "title": "Optimisation et Maintenance",
+  "slug": "optimization-and-maintenance",
+  "description": "Nous optimisons et maintenons votre site web pour garantir des performances maximales.",
+  "icon": "⚙️",
+  "details": {
+    "overview": "Nous proposons des services d'optimisation et de maintenance pour assurer le bon fonctionnement de votre site web.",
+    "features": [
+      "Optimisation de la vitesse et des performances.",
+      "Mises à jour de sécurité et correctifs.",
+      "Support technique continu."
+    ],
+    "technologies": [
+      "Lighthouse",
+      "Webpack",
+      "Docker",
+      "Git"
+    ],
+    "objective": "Si votre objectif est de garder votre site web rapide, sécurisé et à jour, nous pouvons vous aider avec des services d'optimisation et de maintenance continus."
+  },
+  "metaDescription": "Assurez des performances maximales pour votre site web avec nos services d'optimisation et de maintenance. Nous nous concentrons sur la vitesse, la sécurité et la fiabilité."
+}

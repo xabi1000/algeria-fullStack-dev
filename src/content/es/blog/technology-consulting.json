@@ -1,0 +1,22 @@
+{
+  "title": "Consultoría Tecnológica",
+  "slug": "technology-consulting",
+  "description": "Te asesoramos en la selección de tecnologías y planificación de arquitecturas de software.",
+  "icon": "💡",
+  "details": {
+    "overview": "Ofrecemos asesoramiento experto para ayudarte a tomar decisiones informadas sobre tecnología.",
+    "features": [
+      "Evaluación de tecnologías y frameworks.",
+      "Planificación de arquitecturas escalables.",
+      "Migración y modernización de sistemas."
+    ],
+    "technologies": [
+      "Microservicios",
+      "AWS",
+      "Azure",
+      "Kubernetes"
+    ],
+    "objective": "Si tu objetivo es elegir las mejores tecnologías y arquitecturas para tu proyecto, podemos asesorarte con soluciones personalizadas y escalables."
+  },
+  "metaDescription": "Toma decisiones informadas sobre tecnología con nuestros servicios de consultoría. Especializados en selección de tecnologías y planificación de arquitecturas de software escalables."
+}

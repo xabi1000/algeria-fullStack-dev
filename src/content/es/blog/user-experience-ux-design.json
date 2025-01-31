@@ -1,0 +1,22 @@
+{
+  "title": "Diseño de Experiencia de Usuario (UX)",
+  "slug": "user-experience-ux-design",
+  "description": "Creamos interfaces intuitivas y atractivas para mejorar la experiencia del usuario.",
+  "icon": "🎨",
+  "details": {
+    "overview": "Diseñamos interfaces centradas en el usuario para maximizar la usabilidad y satisfacción.",
+    "features": [
+      "Investigación de usuarios y creación de personajes.",
+      "Prototipado y pruebas de usabilidad.",
+      "Diseño de interfaces modernas y accesibles."
+    ],
+    "technologies": [
+      "Figma",
+      "Sketch",
+      "Adobe XD",
+      "InVision"
+    ],
+    "objective": "Si tu objetivo es mejorar la experiencia del usuario con interfaces intuitivas y atractivas, podemos ayudarte a diseñar soluciones centradas en el usuario."
+  },
+  "metaDescription": "Mejora la experiencia del usuario con nuestros servicios de diseño UX. Creamos interfaces intuitivas y modernas para maximizar la usabilidad y satisfacción."
+}

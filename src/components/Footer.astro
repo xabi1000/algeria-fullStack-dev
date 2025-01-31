@@ -1,0 +1,157 @@
+---
+import Icon from './Icon.astro';
+
+import dataNavLang from '../data/nav.json';
+type Locale = 'fr' | 'ar' | 'en' | 'es';
+const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en'; // Por defecto 'en'
+const LINKS = dataNavLang[currentLocale];
+const SOCIAL_MEDIA = dataNavLang.SOCIAL_MEDIA;
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3 class="footer-title">Enlaces Rápidos</h3>
+      <ul class="footer-links">
+        {
+          LINKS.map((link: { url: string; icon: string; name: string }) => (
+            <li role="menuitem">
+              <a href={link.url}>
+                <Icon name={link.icon} />
+                <span>{link.name}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3 class="footer-title">Síguenos</h3>
+      <ul class="social-icons">
+        {
+          SOCIAL_MEDIA.map(
+            (social: { name: string; icon: string; url: string }) => (
+              <li>
+                <a href={social.url} aria-label={social.name}>
+                  <span>{social.name}:</span> <Icon name={social.icon} />
+                </a>
+              </li>
+            )
+          )
+        }
+      </ul>
+    </div>
+
+    <div class="footer-section footer-contact">
+      <h3 class="footer-title">Contacto</h3>
+      <ul>
+        <li>
+          <Icon name="email" />
+          <span>Email: info@example.com</span>
+        </li>
+        <li><Icon name="phone" /> <span>Teléfono: +123 456 789</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>
+      &copy; {new Date().getFullYear()} Your Company. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+    margin-top: 0.7rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    padding: 0.7rem var(--gap);
+
+    ul li {
+      font-size: 0.7rem;
+    }
+  }
+
+  .footer-section {
+    display: grid;
+    gap: 0.7rem;
+    justify-items: center;
+    flex-grow: 1;
+
+    ul {
+      font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+  }
+
+  .footer-contact {
+    ul,
+    ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  .footer-title {
+    margin: 0;
+    color: #f8f8f8;
+    font-size: var(--font-small);
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: #fff;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: var(--gap);
+  }
+
+  .footer-section ul li a {
+    color: #ccc;
+    transition: color 0.3s ease;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid #444;
+    color: #ccc;
+
+    p {
+      font-size: 0.7rem;
+    }
+  }
+</style>

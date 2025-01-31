@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const prerender = true;
+// 1. Definir los idiomas soportados
+export async function getStaticPaths() {
+    return [
+        { params: { lang: "en" } },
+        { params: { lang: "es" } },
+        { params: { lang: "fr" } },
+        { params: { lang: "ar" } },
+    ];
+}
+
+// 2. Obtener idioma de la URL
+const { lang } = Astro.params;
+
+// obtener la url actual
+const currentUrl = new URL(Astro.url);
+const currentLang = currentUrl.pathname.split('/')[1];
+
+
+
+
+
+
+// 3. Cargar traducciones
+const t = (await import(`../../i18n/${lang}.json`)).default;
+const data = (await import(`../../data/${lang}/services.json`)).default;
+
+---
+
+<Layout lang={lang} title={t.header.title} description={t.header.title}>
+
+    <section class="services-list">
+        {
+          data.services.map((service) => (
+            <article class="service-card">
+              <a href={`blog/${service.slug}`}>
+                <div class="icon" set:html={service.icon} />
+                <h2>{service.title}</h2>
+                <p>{service.description}</p>
+              </a>
+            </article>
+          ))
+        }
+      </section>
+</Layout>
+
+<style>
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--gap);
+      margin-top: 2rem;
+      padding: var(--gap);
+    }
+
+    .service-card {
+      padding: 1.5rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      text-align: center;
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #666;
+    }
+  </style>

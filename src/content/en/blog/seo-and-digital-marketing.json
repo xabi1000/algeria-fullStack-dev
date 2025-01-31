@@ -1,0 +1,22 @@
+{
+  "title": "SEO and Digital Marketing",
+  "slug": "seo-and-digital-marketing",
+  "description": "We improve your online visibility with SEO strategies and advertising.",
+  "icon": "📈",
+  "details": {
+    "overview": "We maximize your online presence with SEO strategies and digital marketing campaigns.",
+    "features": [
+      "Technical and content optimization for SEO.",
+      "Advertising campaigns on Google Ads and social media.",
+      "Metric analysis and performance reports."
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Google Ads",
+      "SEMrush",
+      "Ahrefs"
+    ],
+    "objective": "If your goal is to increase your online visibility and attract more customers, we can help with personalized SEO and digital marketing strategies."
+  },
+  "metaDescription": "Boost your online visibility with our SEO and digital marketing services. We specialize in search engine optimization and targeted advertising campaigns."
+}

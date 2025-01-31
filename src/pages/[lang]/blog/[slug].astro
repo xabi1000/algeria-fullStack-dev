@@ -1,0 +1,181 @@
+---
+// src/pages/[lang]/blog/[slug].astro
+
+import Layout from "../../../layouts/Layout.astro";
+const prerender = true;
+// 1. Definición de tipos
+type Language = "en" | "es" | "fr" | "ar";
+interface BlogPost {
+  title: string;
+  slug: string;
+  description: string;
+  icon: string;
+  details: {
+    overview: string;
+    features: string[];
+    technologies: string[];
+    objective: string;
+  };
+  metaDescription: string;
+}
+
+interface Translation {
+  blog: {
+    all_posts: string;
+  };
+}
+
+// 2. Generación de rutas estáticas mejorada
+export async function getStaticPaths() {
+  const allPosts = await import.meta.glob<BlogPost>(
+    "../../../content/*/blog/*.json",
+    { eager: true },
+  );
+
+  return Object.entries(allPosts).map(([filePath, module]) => {
+    const pathSegments = filePath.split("/");
+    const lang = pathSegments[4];
+    const fileName = pathSegments[6];
+    const slug = fileName.replace(/\.json$/, "");
+
+    const fileSlug = module.slug;
+
+    if (!fileSlug) {
+      throw new Error(
+        `❌ No se encontró un campo 'slug' válido en el archivo: ${filePath}`,
+      );
+    }
+
+    if (fileSlug !== slug) {
+      throw new Error(
+        `🔍 Discrepancia en slug: ${fileSlug} vs ${slug} (${filePath})`,
+      );
+    }
+
+    return {
+      params: {
+        lang: lang as Language,
+        slug: slug,
+      },
+    };
+  });
+}
+
+// 3. Manejo seguro de parámetros
+const { lang, slug } = Astro.params as {
+  lang?: Language;
+  slug?: string;
+};
+
+if (!lang || !slug) {
+  throw new Error("🚨 Parámetros requeridos: lang y slug");
+}
+
+// 4. Redirección 308 permanente
+export async function GET() {
+  return new Response(null, {
+    status: 308,
+    headers: {
+      Location: `/${lang}/blog/${slug}`,
+    },
+  });
+}
+
+// 5. Carga de datos con manejo de errores
+let post: BlogPost;
+let t: Translation;
+
+try {
+  const postModule = await import(`../../../content/${lang}/blog/${slug}.json`);
+  post = postModule.default;
+
+  const translationModule = await import(`../../../i18n/${lang}.json`);
+  t = translationModule.default;
+
+  // Validación final de contenido
+  if (post.slug !== slug) {
+    throw new Error(
+      `📛 Slug del contenido (${post.slug}) no coincide con parámetro (${slug})`,
+    );
+  }
+} catch (error) {
+  console.error(`💥 Error cargando contenido: ${error}`);
+  return new Response(null, {
+    status: 404,
+    headers: {
+      Location: `/${lang}/blog`,
+    },
+  });
+}
+---
+
+<Layout lang={lang} title={post.title} description={post.description}>
+
+  <div title={post.title}>
+    <article class="service-details">
+      <header>
+        <h1>
+          {post.title}
+          <span set:html={post.icon} />
+        </h1>
+        <h3>{post.details.overview}</h3>
+        <p class="objective">{post.details.objective}</p>
+      </header>
+
+      <ul class="features">
+        {post.details.features.map((feature) => <li>{feature}</li>)}
+      </ul>
+      <ul class="technologies">
+        {post.details.technologies.map((technologie) => <li>{technologie}</li>)}
+      </ul>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .service-details {
+    padding: var(--gap);
+
+    header {
+      h1,
+      h3 {
+        text-align: center;
+        text-wrap: balance;
+        span {
+          margin-left: 1rem;
+          color: var(--accent-color);
+        }
+      }
+      h3 {
+        color: var(--secondary-color);
+      }
+
+      p {
+        text-wrap: balance;
+        font-size: var(--font-medium);
+      }
+    }
+
+    .features {
+      list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="yellow" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>');
+      list-style-position: outside;
+
+      margin-left: var(--gap);
+    }
+    .technologies {
+      margin-top: var(--gap);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--gap);
+      color: var(--accent-color);
+
+      li {
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--secondary-color);
+        border-radius: 7px;
+      }
+    }
+  }
+</style>

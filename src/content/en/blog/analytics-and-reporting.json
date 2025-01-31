@@ -1,0 +1,22 @@
+{
+  "title": "Analytics and Reporting",
+  "slug": "analytics-and-reporting",
+  "description": "We set up analytics tools and generate reports to measure performance.",
+  "icon": "📊",
+  "details": {
+    "overview": "We provide detailed analytics and custom reports to measure the performance of your applications.",
+    "features": [
+      "Setup of Google Analytics and similar tools.",
+      "Generation of custom reports.",
+      "Data analysis and strategic recommendations."
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Tableau",
+      "Power BI",
+      "BigQuery"
+    ],
+    "objective": "If your goal is to measure and improve the performance of your applications, we can help with analytics tools and custom reporting."
+  },
+  "metaDescription": "Measure and improve your application's performance with our analytics and reporting services. We provide custom reports and data-driven insights."
+}

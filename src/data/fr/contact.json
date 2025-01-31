@@ -1,0 +1,56 @@
+{
+  "form": {
+    "title": "Contactez-nous",
+    "fields": [
+      {
+        "label": "Nom :",
+        "type": "text",
+        "id": "name",
+        "name": "name",
+        "required": true,
+        "placeholder": "Entrez votre nom complet"
+      },
+      {
+        "label": "Email :",
+        "type": "email",
+        "id": "email",
+        "name": "email",
+        "required": true,
+        "placeholder": "Entrez votre adresse email"
+      },
+      {
+        "label": "Message :",
+        "type": "textarea",
+        "id": "message",
+        "name": "message",
+        "required": true,
+        "rows": 5,
+        "placeholder": "Écrivez votre message ici"
+      }
+    ],
+    "buttonText": "Envoyer",
+    "metaDescription": "Contactez-nous via notre formulaire de contact pour toute question ou demande.<br/> Nous sommes là pour vous aider !",
+    "keywords": [
+      "contact",
+      "formulaire de contact",
+      "nous contacter",
+      "support client"
+    ]
+  },
+  "map": {
+    "title": "Notre Emplacement",
+    "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462.11941964604216!2d3.0288401080208964!3d36.80358184373517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb3c0d4b1393f%3A0xb9d0d32bed6cead9!2sZeghara%2C%20Bologhine!5e0!3m2!1ses-419!2sdz!4v1738280890085!5m2!1ses-419!2sdz",
+    "altText": "Carte interactive montrant notre emplacement près du Golden Gate Bridge à San Francisco.",
+    "metaDescription": "Trouvez-nous facilement grâce à notre carte interactive. Nous sommes situés près du Golden Gate Bridge à San Francisco."
+  },
+  "seo": {
+    "pageTitle": "Contactez-nous - Nous sommes à votre écoute",
+    "metaKeywords": [
+      "contact",
+      "localisation",
+      "support",
+      "Golden Gate Bridge"
+    ],
+    "metaDescription": "Contactez-nous via notre formulaire ou consultez notre emplacement sur la carte. Nous sommes disponibles pour répondre à vos questions et vous accompagner."
+  }
+}

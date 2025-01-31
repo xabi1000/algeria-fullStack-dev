@@ -1,0 +1,24 @@
+{
+  "title": "Web Design and Development",
+  "slug": "web-design-and-development",
+  "description": "We create modern, fast, and tailored websites to meet your needs.",
+  "icon": "&#x1f578;",
+  "details": {
+    "overview": "We offer custom web solutions, from informational sites to complex platforms.",
+    "features": [
+      "Responsive design optimized for mobile devices.",
+      "Search engine optimization (SEO).",
+      "Integration with content management systems (CMS)."
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Astro",
+      "Node.js"
+    ],
+    "objective": "If your goal is to have a modern, fast, and tailored website, we can help you build it from scratch or improve your existing site."
+  },
+  "metaDescription": "Create a modern and fast website tailored to your needs with our web design and development services. We specialize in responsive design and SEO."
+}

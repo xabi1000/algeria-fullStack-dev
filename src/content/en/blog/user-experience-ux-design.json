@@ -1,0 +1,22 @@
+{
+  "title": "User Experience (UX) Design",
+  "slug": "user-experience-ux-design",
+  "description": "We create intuitive and attractive interfaces to enhance user experience.",
+  "icon": "🎨",
+  "details": {
+    "overview": "We design user-centered interfaces to maximize usability and satisfaction.",
+    "features": [
+      "User research and persona creation.",
+      "Prototyping and usability testing.",
+      "Modern and accessible interface design."
+    ],
+    "technologies": [
+      "Figma",
+      "Sketch",
+      "Adobe XD",
+      "InVision"
+    ],
+    "objective": "If your goal is to improve user experience with intuitive and attractive interfaces, we can help you design user-centered solutions."
+  },
+  "metaDescription": "Enhance user experience with our UX design services. We create intuitive and modern interfaces to maximize usability and satisfaction."
+}

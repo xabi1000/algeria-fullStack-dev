@@ -1,0 +1,22 @@
+{
+  "title": "Cybersecurity",
+  "slug": "cybersecurity",
+  "description": "We protect your systems and data with advanced security measures.",
+  "icon": "🔒",
+  "details": {
+    "overview": "We implement security measures to protect your systems and data from threats.",
+    "features": [
+      "Security audits and penetration testing.",
+      "Firewall configuration and intrusion detection systems.",
+      "Data encryption and secure backups."
+    ],
+    "technologies": [
+      "SSL/TLS",
+      "OWASP",
+      "Penetration Testing",
+      "VPN"
+    ],
+    "objective": "If your goal is to protect your systems and data from cyber threats, we can help with advanced security measures and comprehensive audits."
+  },
+  "metaDescription": "Protect your systems and data with our cybersecurity services. We offer advanced security measures, audits, and penetration testing."
+}

@@ -1,0 +1,164 @@
+{
+  "services": [
+    {
+      "title": "Web Design and Development",
+      "slug": "web-design-and-development",
+      "description": "We create modern, fast, and tailored websites to meet your needs.",
+      "icon": "&#x1f578;",
+      "details": {
+        "overview": "We offer custom web solutions, from informational sites to complex platforms.",
+        "features": [
+          "Responsive design optimized for mobile devices.",
+          "Search engine optimization (SEO).",
+          "Integration with content management systems (CMS)."
+        ],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Astro",
+          "Node.js"
+        ],
+        "objective": "If your goal is to have a modern, fast, and tailored website, we can help you build it from scratch or improve your existing site."
+      },
+      "metaDescription": "Create a modern and fast website tailored to your needs with our web design and development services. We specialize in responsive design and SEO."
+    },
+    {
+      "title": "Mobile Applications",
+      "slug": "mobile-applications",
+      "description": "We develop native and hybrid apps for iOS and Android.",
+      "icon": "📱",
+      "details": {
+        "overview": "We create mobile applications that deliver an exceptional user experience.",
+        "features": [
+          "Native development for iOS (Swift) and Android (Kotlin).",
+          "Hybrid apps with React Native.",
+          "Integration with APIs and cloud services."
+        ],
+        "technologies": ["Swift", "Kotlin", "React Native", "Firebase"],
+        "objective": "If your goal is to create a mobile app for iOS, Android, or both, we can help you design, develop, and launch your app with the highest quality and functionality."
+      },
+      "metaDescription": "Develop native and hybrid mobile apps for iOS and Android with our expert mobile application services. We focus on user experience and seamless integration."
+    },
+    {
+      "title": "SEO and Digital Marketing",
+      "slug": "seo-and-digital-marketing",
+      "description": "We improve your online visibility with SEO strategies and advertising.",
+      "icon": "📈",
+      "details": {
+        "overview": "We maximize your online presence with SEO strategies and digital marketing campaigns.",
+        "features": [
+          "Technical and content optimization for SEO.",
+          "Advertising campaigns on Google Ads and social media.",
+          "Metric analysis and performance reports."
+        ],
+        "technologies": ["Google Analytics", "Google Ads", "SEMrush", "Ahrefs"],
+        "objective": "If your goal is to increase your online visibility and attract more customers, we can help with personalized SEO and digital marketing strategies."
+      },
+      "metaDescription": "Boost your online visibility with our SEO and digital marketing services. We specialize in search engine optimization and targeted advertising campaigns."
+    },
+    {
+      "title": "Optimization and Maintenance",
+      "slug": "optimization-and-maintenance",
+      "description": "We optimize and maintain your website to ensure maximum performance.",
+      "icon": "⚙️",
+      "details": {
+        "overview": "We offer optimization and maintenance services to ensure your website runs smoothly.",
+        "features": [
+          "Speed and performance optimization.",
+          "Security updates and patches.",
+          "Ongoing technical support."
+        ],
+        "technologies": ["Lighthouse", "Webpack", "Docker", "Git"],
+        "objective": "If your goal is to keep your website fast, secure, and up-to-date, we can help with continuous optimization and maintenance services."
+      },
+      "metaDescription": "Ensure your website's maximum performance with our optimization and maintenance services. We focus on speed, security, and reliability."
+    },
+    {
+      "title": "User Experience (UX) Design",
+      "slug": "user-experience-ux-design",
+      "description": "We create intuitive and attractive interfaces to enhance user experience.",
+      "icon": "🎨",
+      "details": {
+        "overview": "We design user-centered interfaces to maximize usability and satisfaction.",
+        "features": [
+          "User research and persona creation.",
+          "Prototyping and usability testing.",
+          "Modern and accessible interface design."
+        ],
+        "technologies": ["Figma", "Sketch", "Adobe XD", "InVision"],
+        "objective": "If your goal is to improve user experience with intuitive and attractive interfaces, we can help you design user-centered solutions."
+      },
+      "metaDescription": "Enhance user experience with our UX design services. We create intuitive and modern interfaces to maximize usability and satisfaction."
+    },
+    {
+      "title": "API Integration",
+      "slug": "api-integration",
+      "description": "We connect your applications with third-party services to expand their functionality.",
+      "icon": "🔗",
+      "details": {
+        "overview": "We integrate third-party APIs to expand the capabilities of your applications.",
+        "features": [
+          "Integration with payment services (Stripe, PayPal).",
+          "Connection with social media (Facebook, Twitter, Instagram).",
+          "Process automation with custom APIs."
+        ],
+        "technologies": ["REST", "GraphQL", "Postman", "OAuth"],
+        "objective": "If your goal is to connect your application with third-party services to expand its functionality, we can help with efficient and secure API integration."
+      },
+      "metaDescription": "Expand your application's functionality with our API integration services. We connect your apps with third-party services seamlessly and securely."
+    },
+    {
+      "title": "Technology Consulting",
+      "slug": "technology-consulting",
+      "description": "We advise you on technology selection and software architecture planning.",
+      "icon": "💡",
+      "details": {
+        "overview": "We offer expert advice to help you make informed technology decisions.",
+        "features": [
+          "Evaluation of technologies and frameworks.",
+          "Planning of scalable architectures.",
+          "System migration and modernization."
+        ],
+        "technologies": ["Microservices", "AWS", "Azure", "Kubernetes"],
+        "objective": "If your goal is to choose the best technologies and architectures for your project, we can advise you with personalized and scalable solutions."
+      },
+      "metaDescription": "Make informed technology decisions with our consulting services. We specialize in technology selection and scalable software architecture planning."
+    },
+    {
+      "title": "Cybersecurity",
+      "slug": "cybersecurity",
+      "description": "We protect your systems and data with advanced security measures.",
+      "icon": "🔒",
+      "details": {
+        "overview": "We implement security measures to protect your systems and data from threats.",
+        "features": [
+          "Security audits and penetration testing.",
+          "Firewall configuration and intrusion detection systems.",
+          "Data encryption and secure backups."
+        ],
+        "technologies": ["SSL/TLS", "OWASP", "Penetration Testing", "VPN"],
+        "objective": "If your goal is to protect your systems and data from cyber threats, we can help with advanced security measures and comprehensive audits."
+      },
+      "metaDescription": "Protect your systems and data with our cybersecurity services. We offer advanced security measures, audits, and penetration testing."
+    },
+    {
+      "title": "Analytics and Reporting",
+      "slug": "analytics-and-reporting",
+      "description": "We set up analytics tools and generate reports to measure performance.",
+      "icon": "📊",
+      "details": {
+        "overview": "We provide detailed analytics and custom reports to measure the performance of your applications.",
+        "features": [
+          "Setup of Google Analytics and similar tools.",
+          "Generation of custom reports.",
+          "Data analysis and strategic recommendations."
+        ],
+        "technologies": ["Google Analytics", "Tableau", "Power BI", "BigQuery"],
+        "objective": "If your goal is to measure and improve the performance of your applications, we can help with analytics tools and custom reporting."
+      },
+      "metaDescription": "Measure and improve your application's performance with our analytics and reporting services. We provide custom reports and data-driven insights."
+    }
+  ]
+}

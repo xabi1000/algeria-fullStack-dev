@@ -1,0 +1,100 @@
+{
+  "form": {
+    "title": "Contáctanos - Ponte en contacto hoy",
+    "fields": [
+      {
+        "label": "Nombre:",
+        "type": "text",
+        "id": "name",
+        "name": "name",
+        "required": true
+      },
+      {
+        "label": "Correo electrónico:",
+        "type": "email",
+        "id": "email",
+        "name": "email",
+        "required": true
+      },
+      {
+        "label": "Mensaje:",
+        "type": "textarea",
+        "id": "message",
+        "name": "message",
+        "required": true,
+        "rows": 5
+      }
+    ],
+    "buttonText": "Enviar mensaje",
+    "metaDescription": "Usa nuestro formulario de contacto para ponerte en contacto con nosotros.<br/> Estamos aquí para responder tus preguntas y brindarte asistencia. ¡Contáctanos hoy!",
+    "keywords": [
+      "formulario de contacto",
+      "ponte en contacto",
+      "enviar mensaje",
+      "contáctanos"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contáctanos - Ponte en contacto hoy",
+      "description": "Usa nuestro formulario de contacto para ponerte en contacto con nosotros. Estamos aquí para responder tus preguntas y brindarte asistencia. ¡Contáctanos hoy!",
+      "url": "/contact",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Soporte técnico",
+        "email": "info@example.com",
+        "url": "/contact"
+      }
+    }
+  },
+  "map": {
+    "title": "Nuestra ubicación - Encuéntranos en el mapa",
+    "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462.11941964604216!2d3.0288401080208964!3d36.80358184373517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb3c0d4b1393f%3A0xb9d0d32bed6cead9!2sZeghara%2C%20Bologhine!5e0!3m2!1ses-419!2sdz!4v1738280890085!5m2!1ses-419!2sdz",
+    "altText": "Mapa interactivo que muestra nuestra ubicación cerca del Puente Golden Gate en San Francisco.",
+    "metaDescription": "Encuentra nuestra ubicación fácilmente usando nuestro mapa interactivo. Estamos convenientemente ubicados cerca del Puente Golden Gate. ¡Visítanos hoy!",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Nuestra ubicación - Encuéntranos en el mapa",
+      "description": "Encuentra nuestra ubicación fácilmente usando nuestro mapa interactivo. Estamos convenientemente ubicados cerca del Puente Golden Gate. ¡Visítanos hoy!",
+      "image": "https://www.example.com/images/map.jpg",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "37.77492997975921",
+        "longitude": "-122.41941558468162"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Golden Gate Bridge",
+        "addressLocality": "San Francisco",
+        "addressRegion": "California",
+        "postalCode": "94129",
+        "addressCountry": "Estados Unidos"
+      }
+    }
+  },
+  "seo": {
+    "pageTitle": "Contáctanos - Ponte en contacto para más información",
+    "metaKeywords": [
+      "contáctanos",
+      "mapa de ubicación",
+      "ponte en contacto",
+      "envíanos un mensaje",
+      "Puente Golden Gate"
+    ],
+    "metaDescription": "Contáctanos hoy usando nuestro formulario fácil de usar o encuentra nuestra ubicación en el mapa. Estamos aquí para ayudarte con cualquier pregunta o consulta.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Contáctanos - Ponte en contacto para más información",
+      "description": "Contáctanos hoy usando nuestro formulario fácil de usar o encuentra nuestra ubicación en el mapa. Estamos aquí para ayudarte con cualquier pregunta o consulta.",
+      "url": "/contact",
+      "potentialAction": {
+        "@type": "ContactPoint",
+        "contactType": "Soporte técnico",
+        "email": "info@example.com",
+        "url": "/contact"
+      }
+    }
+  }
+}

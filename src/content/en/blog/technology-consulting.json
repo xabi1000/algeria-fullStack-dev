@@ -1,0 +1,22 @@
+{
+  "title": "Technology Consulting",
+  "slug": "technology-consulting",
+  "description": "We advise you on technology selection and software architecture planning.",
+  "icon": "💡",
+  "details": {
+    "overview": "We offer expert advice to help you make informed technology decisions.",
+    "features": [
+      "Evaluation of technologies and frameworks.",
+      "Planning of scalable architectures.",
+      "System migration and modernization."
+    ],
+    "technologies": [
+      "Microservices",
+      "AWS",
+      "Azure",
+      "Kubernetes"
+    ],
+    "objective": "If your goal is to choose the best technologies and architectures for your project, we can advise you with personalized and scalable solutions."
+  },
+  "metaDescription": "Make informed technology decisions with our consulting services. We specialize in technology selection and scalable software architecture planning."
+}

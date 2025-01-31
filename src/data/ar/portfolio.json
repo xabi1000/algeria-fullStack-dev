@@ -1,0 +1,376 @@
+[
+  {
+    "id": 1,
+    "title": "منصة تجارة إلكترونية حديثة",
+    "description": "منصة تجارة إلكترونية تم تطويرها باستخدام React وNode.js، مصممة لتوفير تجربة تسوق سلسة.",
+    "image": "/portfolio/e-commerce.webp",
+    "altText": "لقطة شاشة لمنصة تجارة إلكترونية حديثة تم تطويرها باستخدام React وNode.js.",
+    "link": "#",
+    "category": "التجارة الإلكترونية",
+    "technologies": ["React", "Node.js", "Tailwind CSS"],
+    "testimonial": "عمل رائع! تجاوزت المنصة توقعاتنا.",
+    "stars": "⭐⭐⭐⭐⭐",
+    "metaDescription": "اكتشف منصتنا الحديثة للتجارة الإلكترونية المبنية باستخدام React وNode.js، والتي توفر تجربة تسوق سلسة للمستخدمين.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "منصة تجارة إلكترونية حديثة",
+      "description": "منصة تجارة إلكترونية تم تطويرها باستخدام React وNode.js، مصممة لتوفير تجربة تسوق سلسة.",
+      "image": "/portfolio/e-commerce.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "عمل رائع! تجاوزت المنصة توقعاتنا."
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "تصميم صفحة هبوط للشركات الناشئة",
+    "description": "صفحة هبوط حديثة وسريعة الاستجابة مصممة باستخدام Astro وSvelte، مثالية للشركات الناشئة.",
+    "image": "/portfolio/landing-page.webp",
+    "altText": "تصميم صفحة هبوط حديثة للشركات الناشئة باستخدام Astro وSvelte.",
+    "link": "#",
+    "category": "صفحات الهبوط",
+    "technologies": ["Astro", "Svelte", "Figma"],
+    "testimonial": "كان الفريق محترفًا للغاية وقام بتسليم المشروع في الوقت المحدد.",
+    "stars": "⭐⭐⭐⭐",
+    "metaDescription": "اكتشف تصميم صفحة الهبوط الحديثة للشركات الناشئة، المصممة باستخدام Astro وSvelte لتوفير تجربة مستخدم تفاعلية وسريعة الاستجابة.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "تصميم صفحة هبوط للشركات الناشئة",
+      "description": "صفحة هبوط حديثة وسريعة الاستجابة مصممة باستخدام Astro وSvelte، مثالية للشركات الناشئة.",
+      "image": "/portfolio/landing-page.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "كان الفريق محترفًا للغاية وقام بتسليم المشروع في الوقت المحدد."
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "تطبيق ويب لإدارة المهام",
+    "description": "تطبيق فعال لإدارة المهام تم تطويره باستخدام Vue.js وFirebase، مصمم لتعزيز الإنتاجية.",
+    "image": "/portfolio/task-manager.webp",
+    "altText": "تطبيق إدارة المهام المطور باستخدام Vue.js وFirebase.",
+    "link": "#",
+    "category": "تطبيقات الويب",
+    "technologies": ["Vue.js", "Firebase", "SCSS"],
+    "testimonial": "لقد حسّن التطبيق إنتاجيتنا بشكل كبير.",
+    "stars": "⭐⭐⭐⭐⭐",
+    "metaDescription": "عزز إنتاجيتك مع تطبيقنا لإدارة المهام، المطور باستخدام Vue.js وFirebase لتنظيم المهام بسلاسة.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "تطبيق ويب لإدارة المهام",
+      "description": "تطبيق فعال لإدارة المهام تم تطويره باستخدام Vue.js وFirebase، مصمم لتعزيز الإنتاجية.",
+      "image": "/portfolio/task-manager.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "لقد حسّن التطبيق إنتاجيتنا بشكل كبير."
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "تطوير موقع ويب للشركات",
+    "description": "موقع ويب احترافي للشركات مصمم باستخدام WordPress وElementor، يعكس هوية العلامة التجارية.",
+    "image": "/portfolio/corporative-web.webp",
+    "altText": "موقع ويب للشركات تم تطويره باستخدام WordPress وElementor.",
+    "link": "#",
+    "category": "مواقع الشركات",
+    "technologies": ["WordPress", "Elementor", "PHP"],
+    "testimonial": "يعكس الموقع هوية علامتنا التجارية بشكل مثالي.",
+    "stars": "⭐⭐⭐⭐",
+    "metaDescription": "عزز هوية علامتك التجارية مع موقعنا الاحترافي للشركات، المطور باستخدام WordPress وElementor.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "تطوير موقع ويب للشركات",
+      "description": "موقع ويب احترافي للشركات مصمم باستخدام WordPress وElementor، يعكس هوية العلامة التجارية.",
+      "image": "/portfolio/corporative-web.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "يعكس الموقع هوية علامتنا التجارية بشكل مثالي."
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "منصة دورات تعليمية عبر الإنترنت",
+    "description": "منصة تفاعلية للدورات التعليمية عبر الإنترنت تم تطويرها باستخدام Laravel وMySQL، مثالية للمعلمين والمتعلمين.",
+    "image": "/portfolio/education-landing.webp",
+    "altText": "منصة دورات تعليمية عبر الإنترنت تم تطويرها باستخدام Laravel وMySQL.",
+    "link": "#",
+    "category": "تطبيقات الويب",
+    "technologies": ["Laravel", "MySQL", "Bootstrap"],
+    "testimonial": "المنصة سهلة الاستخدام ووظيفية للغاية.",
+    "stars": "⭐⭐⭐⭐⭐",
+    "metaDescription": "اكتشف منصتنا التفاعلية للدورات التعليمية عبر الإنترنت، المطورة باستخدام Laravel وMySQL، والمصممة للمعلمين والمتعلمين.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "منصة دورات تعليمية عبر الإنترنت",
+      "description": "منصة تفاعلية للدورات التعليمية عبر الإنترنت تم تطويرها باستخدام Laravel وMySQL، مثالية للمعلمين والمتعلمين.",
+      "image": "/portfolio/education-landing.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "المنصة سهلة الاستخدام ووظيفية للغاية."
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "مدونة تكنولوجية",
+    "description": "مدونة تكنولوجية حديثة وسريعة تم إنشاؤها باستخدام Astro وMarkdown، مثالية لمشاركة الأفكار.",
+    "image": "/portfolio/blog-tecnology.webp",
+    "altText": "مدونة تكنولوجية تم تطويرها باستخدام Astro وMarkdown.",
+    "link": "#",
+    "category": "المدونات",
+    "technologies": ["Astro", "Markdown", "Tailwind CSS"],
+    "testimonial": "تحتوي المدونة على تصميم رائع وهي سريعة للغاية.",
+    "stars": "⭐⭐⭐⭐⭐",
+    "metaDescription": "اكتشف مدونتنا التكنولوجية الحديثة، المطورة باستخدام Astro وMarkdown، والتي توفر محتوى سريعًا وجذابًا.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "مدونة تكنولوجية",
+      "description": "مدونة تكنولوجية حديثة وسريعة تم إنشاؤها باستخدام Astro وMarkdown، مثالية لمشاركة الأفكار.",
+      "image": "/portfolio/blog-tecnology.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "تحتوي المدونة على تصميم رائع وهي سريعة للغاية."
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "تطبيق حجز المطاعم",
+    "description": "تطبيق ويب لحجز المطاعم تم تطويره باستخدام React وMongoDB، مما يبسط عملية الحجز.",
+    "image": "/portfolio/reservations.webp",
+    "altText": "تطبيق حجز المطاعم المطور باستخدام React وMongoDB.",
+    "link": "#",
+    "category": "تطبيقات الويب",
+    "technologies": ["React", "MongoDB", "Express"],
+    "testimonial": "لقد سهّل التطبيق عملية الحجز لدينا.",
+    "stars": "⭐⭐⭐⭐",
+    "metaDescription": "بسّط عملية حجز المطاعم مع تطبيقنا، المطور باستخدام React وMongoDB لتجربة سلسة.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "تطبيق حجز المطاعم",
+      "description": "تطبيق ويب لحجز المطاعم تم تطويره باستخدام React وMongoDB، مما يبسط عملية الحجز.",
+      "image": "/portfolio/reservations.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "لقد سهّل التطبيق عملية الحجز لدينا."
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "متجر ملابس عبر الإنترنت",
+    "description": "متجر تجارة إلكترونية للملابس تم تطويره باستخدام Shopify وLiquid، يوفر تجربة تسوق سهلة.",
+    "image": "/portfolio/tienda-ropa.webp",
+    "altText": "متجر ملابس عبر الإنترنت تم تطويره باستخدام Shopify وLiquid.",
+    "link": "#",
+    "category": "التجارة الإلكترونية",
+    "technologies": ["Shopify", "Liquid", "JavaScript"],
+    "testimonial": "المتجر سهل الاستخدام، وقد زادت المبيعات.",
+    "stars": "⭐⭐⭐⭐⭐",
+    "metaDescription": "تسوق بسهولة مع متجر الملابس عبر الإنترنت الخاص بنا، المطور باستخدام Shopify وLiquid لتجربة مستخدم مريحة.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "متجر ملابس عبر الإنترنت",
+      "description": "متجر تجارة إلكترونية للملابس تم تطويره باستخدام Shopify وLiquid، يوفر تجربة تسوق سهلة.",
+      "image": "/portfolio/tienda-ropa.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "المتجر سهل الاستخدام، وقد زادت المبيعات."
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "موقع ويب شخصي لعرض الأعمال",
+    "description": "موقع ويب شخصي حديث مصمم باستخدام Svelte وSCSS، يعرض الأعمال المهنية.",
+    "image": "/portfolio/personal-portfolio.webp",
+    "altText": "موقع ويب شخصي لعرض الأعمال تم تطويره باستخدام Svelte وSCSS.",
+    "link": "#",
+    "category": "مواقع العرض الشخصية",
+    "technologies": ["Svelte", "SCSS", "Vite"],
+    "testimonial": "الموقع حديث ويعكس أعمالي بشكل احترافي.",
+    "stars": "⭐⭐⭐⭐⭐",
+    "metaDescription": "اعرض أعمالك مع موقعنا الشخصي الحديث، المصمم باستخدام Svelte وSCSS لعرض احترافي.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "موقع ويب شخصي لعرض الأعمال",
+      "description": "موقع ويب شخصي حديث مصمم باستخدام Svelte وSCSS، يعرض الأعمال المهنية.",
+      "image": "/portfolio/personal-portfolio.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "الموقع حديث ويعكس أعمالي بشكل احترافي."
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "نظام إدارة المخزون",
+    "description": "نظام فعال لإدارة المخزون تم تطويره باستخدام Django وPostgreSQL، مما يحسن التحكم في المخزون.",
+    "image": "/portfolio/sistema-inventarios.webp",
+    "altText": "نظام إدارة المخزون المطور باستخدام Django وPostgreSQL.",
+    "link": "#",
+    "category": "تطبيقات الويب",
+    "technologies": ["Django", "PostgreSQL", "Bootstrap"],
+    "testimonial": "لقد حسّن النظام التحكم في مخزوننا.",
+    "stars": "⭐⭐⭐⭐",
+    "metaDescription": "حسّن إدارة المخزون مع نظامنا، المطور باستخدام Django وPostgreSQL لتحكم فعال في المخزون.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "نظام إدارة المخزون",
+      "description": "نظام فعال لإدارة المخزون تم تطويره باستخدام Django وPostgreSQL، مما يحسن التحكم في المخزون.",
+      "image": "/portfolio/sistema-inventarios.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "لقد حسّن النظام التحكم في مخزوننا."
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "صفحة هبوط لوكالة تسويق",
+    "description": "صفحة هبوط عالية التحويل لوكالة تسويق، مصممة باستخدام HTML وCSS وJavaScript.",
+    "image": "/portfolio/landing-markiting-agency.webp",
+    "altText": "صفحة هبوط لوكالة تسويق تم تطويرها باستخدام HTML وCSS وJavaScript.",
+    "link": "#",
+    "category": "صفحات الهبوط",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "testimonial": "زادت صفحة الهبوط من نسبة التحويلات بنسبة 30%.",
+    "stars": "⭐⭐⭐⭐",
+    "metaDescription": "عزز التحويلات مع صفحة الهبوط عالية الأداء لوكالة التسويق، المصممة باستخدام HTML وCSS وJavaScript.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "صفحة هبوط لوكالة تسويق",
+      "description": "صفحة هبوط عالية التحويل لوكالة تسويق، مصممة باستخدام HTML وCSS وJavaScript.",
+      "image": "/portfolio/landing-markiting-agency.webp",
+      "url": "#",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "عميل راضٍ"
+        },
+        "reviewBody": "زادت صفحة الهبوط من نسبة التحويلات بنسبة 30%."
+      }
+    }
+  }
+]

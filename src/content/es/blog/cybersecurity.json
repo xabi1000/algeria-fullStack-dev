@@ -1,0 +1,22 @@
+{
+  "title": "Ciberseguridad",
+  "slug": "cybersecurity",
+  "description": "Protegemos tus sistemas y datos con medidas de seguridad avanzadas.",
+  "icon": "🔒",
+  "details": {
+    "overview": "Implementamos medidas de seguridad para proteger tus sistemas y datos de amenazas.",
+    "features": [
+      "Auditorías de seguridad y pruebas de penetración.",
+      "Configuración de firewalls y sistemas de detección de intrusiones.",
+      "Cifrado de datos y copias de seguridad seguras."
+    ],
+    "technologies": [
+      "SSL/TLS",
+      "OWASP",
+      "Pruebas de Penetración",
+      "VPN"
+    ],
+    "objective": "Si tu objetivo es proteger tus sistemas y datos de amenazas cibernéticas, podemos ayudarte con medidas de seguridad avanzadas y auditorías completas."
+  },
+  "metaDescription": "Protege tus sistemas y datos con nuestros servicios de ciberseguridad. Ofrecemos medidas de seguridad avanzadas, auditorías y pruebas de penetración."
+}

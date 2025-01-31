@@ -1,0 +1,98 @@
+---
+interface Props {
+    lang: "en" | "es" | "fr" | "ar";
+}
+
+// 1. Definir los idiomas soportados
+export async function getStaticPaths() {
+    return [
+        { params: { lang: "en" } },
+        { params: { lang: "es" } },
+        { params: { lang: "fr" } },
+        { params: { lang: "ar" } },
+    ];
+}
+
+// 2. Obtener idioma de la URL
+const { lang } = Astro.params;
+---
+
+<!-- Selector de idioma -->
+<div class="lang-switcher-container">
+    <select id="langSwitcher">
+        <!-- default selected option     -->
+        <option value="" disabled selected>Change language</option>
+        <option value="en" selected={lang === "en"}>English</option>
+        <option value="es" selected={lang === "es"}>Español</option>
+        <option value="fr" selected={lang === "fr"}>Français</option>
+        <option value="ar" selected={lang === "ar"}>العربية</option>
+    </select>
+</div>
+
+<script>
+    const langSwitcher = document.getElementById(
+        "langSwitcher",
+    ) as HTMLSelectElement;
+
+    langSwitcher.addEventListener("change", (e: Event) => {
+        const newLang = (e.target as HTMLSelectElement).value;
+
+        // Obtener la ruta actual (ejemplo: /es/blog/post-1)
+        const currentPath = window.location.pathname;
+
+        // Reemplazar el segmento del idioma en la ruta
+        const newPath = currentPath.replace(
+            /^\/(en|es|fr|ar)/, // Busca el idioma actual al inicio
+            `/${newLang}`, // Reemplaza con el nuevo idioma
+        );
+
+        window.location.href = newPath || "en";
+    });
+</script>
+
+<style>
+    .lang-switcher-container {
+        margin: 1rem 0;
+    }
+
+    #langSwitcher {
+        appearance: none;
+        background-color: #ffffff;
+        border: 2px solid #e2e8f0;
+        border-radius: 0.5rem;
+        padding: 0.5rem 2rem 0.5rem 1rem;
+        font-size: 1rem;
+        color: #1a202c;
+        cursor: pointer;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%231a202c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.5rem center;
+        background-size: 1.2em;
+        min-width: 150px;
+        transition: all 0.2s ease;
+    }
+
+    #langSwitcher:hover {
+        border-color: #cbd5e0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    #langSwitcher:focus {
+        outline: none;
+        border-color: #4299e1;
+        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+    }
+
+    #langSwitcher option {
+        padding: 0.5rem;
+        background-color: #ffffff;
+        color: #1a202c;
+    }
+
+    @media (max-width: 640px) {
+        #langSwitcher {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+</style>

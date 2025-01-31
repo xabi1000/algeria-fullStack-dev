@@ -1,0 +1,29 @@
+<div class="video_container">
+  <video class="video_background" autoplay muted loop>
+    <source src="/digita_world_map.webm" type="video/mp4" />
+    Tu navegador no soporta videos de fondo.
+  </video>
+</div>
+
+<style>
+  :is(.video_container, .video_container video, .video_container::before) {
+    width: 100dvw;
+    height: 100dvh;
+  }
+  .video_container {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgb(3 0 4 / 91%);
+    }
+
+    video {
+      object-fit: cover;
+    }
+  }
+</style>

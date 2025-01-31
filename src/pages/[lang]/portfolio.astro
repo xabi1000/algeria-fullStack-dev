@@ -1,0 +1,72 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+// 1. Definir los idiomas soportados
+export async function getStaticPaths() {
+    return [
+        { params: { lang: "en" } },
+        { params: { lang: "es" } },
+        { params: { lang: "fr" } },
+        { params: { lang: "ar" } },
+    ];
+}
+
+// 2. Obtener idioma de la URL
+const { lang } = Astro.params;
+
+// 3. Cargar traducciones
+const t = (await import(`../../i18n/${lang}.json`)).default;
+const data = (await import(`../../data/${lang}/portfolio.json`)).default;
+const prerender = true;
+
+---
+
+<Layout lang={lang} title={t.header.title} description={t.header.title}>
+    <header class="projects-hero">
+        <h1>Nuestro Trabajo Habla por Nosotros</h1>
+        <p>
+            Explora algunos de los proyectos que hemos desarrollado para
+            nuestros clientes.
+        </p>
+    </header>
+
+    <section class="projects-grid">
+        {data.map((project) => <ProjectCard {...project} />)}
+    </section>
+
+    <section class="cta">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <a href="/contact" class="cta-button">¡Contáctanos!</a>
+    </section>
+</Layout>
+
+<style>
+    .projects-hero {
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+        gap: var(--gap);
+        padding: var(--gap);
+    }
+
+    .cta {
+        text-align: center;
+        padding: var(--gap);
+        background-color: #0070f3;
+        color: white;
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            color: #0070f3;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    }
+</style>

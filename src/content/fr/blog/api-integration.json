@@ -1,0 +1,22 @@
+{
+  "title": "Intégration d'API",
+  "slug": "api-integration",
+  "description": "Nous connectons vos applications à des services tiers pour étendre leurs fonctionnalités.",
+  "icon": "🔗",
+  "details": {
+    "overview": "Nous intégrons des APIs tierces pour étendre les capacités de vos applications.",
+    "features": [
+      "Intégration avec des services de paiement (Stripe, PayPal).",
+      "Connexion avec les réseaux sociaux (Facebook, Twitter, Instagram).",
+      "Automatisation des processus avec des APIs personnalisées."
+    ],
+    "technologies": [
+      "REST",
+      "GraphQL",
+      "Postman",
+      "OAuth"
+    ],
+    "objective": "Si votre objectif est de connecter votre application à des services tiers pour étendre ses fonctionnalités, nous pouvons vous aider avec une intégration d'API efficace et sécurisée."
+  },
+  "metaDescription": "Étendez les fonctionnalités de votre application avec nos services d'intégration d'API. Nous connectons vos applications à des services tiers de manière fluide et sécurisée."
+}

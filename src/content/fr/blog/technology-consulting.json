@@ -1,0 +1,22 @@
+{
+  "title": "Consulting Technologique",
+  "slug": "technology-consulting",
+  "description": "Nous vous conseillons sur le choix des technologies et la planification des architectures logicielles.",
+  "icon": "💡",
+  "details": {
+    "overview": "Nous offrons des conseils d'experts pour vous aider à prendre des décisions technologiques éclairées.",
+    "features": [
+      "Évaluation des technologies et frameworks.",
+      "Planification d'architectures évolutives.",
+      "Migration et modernisation des systèmes."
+    ],
+    "technologies": [
+      "Microservices",
+      "AWS",
+      "Azure",
+      "Kubernetes"
+    ],
+    "objective": "Si votre objectif est de choisir les meilleures technologies et architectures pour votre projet, nous pouvons vous conseiller avec des solutions personnalisées et évolutives."
+  },
+  "metaDescription": "Prenez des décisions technologiques éclairées avec nos services de consulting. Nous sommes spécialisés dans le choix des technologies et la planification d'architectures logicielles évolutives."
+}

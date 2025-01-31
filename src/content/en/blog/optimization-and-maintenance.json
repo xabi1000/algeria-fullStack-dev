@@ -1,0 +1,22 @@
+{
+  "title": "Optimization and Maintenance",
+  "slug": "optimization-and-maintenance",
+  "description": "We optimize and maintain your website to ensure maximum performance.",
+  "icon": "⚙️",
+  "details": {
+    "overview": "We offer optimization and maintenance services to ensure your website runs smoothly.",
+    "features": [
+      "Speed and performance optimization.",
+      "Security updates and patches.",
+      "Ongoing technical support."
+    ],
+    "technologies": [
+      "Lighthouse",
+      "Webpack",
+      "Docker",
+      "Git"
+    ],
+    "objective": "If your goal is to keep your website fast, secure, and up-to-date, we can help with continuous optimization and maintenance services."
+  },
+  "metaDescription": "Ensure your website's maximum performance with our optimization and maintenance services. We focus on speed, security, and reliability."
+}

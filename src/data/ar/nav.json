@@ -1,0 +1,111 @@
+{
+  "LINKS": [
+    {
+      "name": "الصفحة الرئيسية",
+      "url": "/ar/",
+      "icon": "home",
+      "title": "الصفحة الرئيسية - وكالتنا لتطوير الويب",
+      "metaDescription": "اكتشف وكالتنا المتخصصة في تطوير الويب والحلول الرقمية المخصصة.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "الصفحة الرئيسية",
+        "url": "/ar/",
+        "description": "اكتشف وكالتنا المتخصصة في تطوير الويب والحلول الرقمية المخصصة."
+      }
+    },
+    {
+      "name": "الخدمات",
+      "url": "/ar/services",
+      "icon": "services",
+      "title": "خدماتنا - تطوير الويب والتطبيقات المحمولة",
+      "metaDescription": "اكتشف خدماتنا في تطوير الويب، التطبيقات المحمولة، تحسين محركات البحث (SEO)، والمزيد.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "الخدمات",
+        "url": "/ar/services",
+        "description": "اكتشف خدماتنا في تطوير الويب، التطبيقات المحمولة، تحسين محركات البحث (SEO)، والمزيد."
+      }
+    },
+    {
+      "name": "الأعمال السابقة",
+      "url": "/ar/portfolio",
+      "icon": "portfolio",
+      "title": "الأعمال السابقة - مشاريعنا",
+      "metaDescription": "اكتشف مشاريعنا الحديثة وخبرتنا في تطوير الويب والتصميم.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "الأعمال السابقة",
+        "url": "/ar/portfolio",
+        "description": "اكتشف مشاريعنا الحديثة وخبرتنا في تطوير الويب والتصميم."
+      }
+    },
+    {
+      "name": "اتصل بنا",
+      "url": "/ar/contact",
+      "icon": "contact",
+      "title": "اتصل بنا - نحن هنا لمساعدتك",
+      "metaDescription": "اتصل بنا لمناقشة مشروعك أو لأي استفسار. نحن هنا لمساعدتك!",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "اتصل بنا",
+        "url": "/ar/contact",
+        "description": "اتصل بنا لمناقشة مشروعك أو لأي استفسار. نحن هنا لمساعدتك!"
+      }
+    }
+  ],
+
+  "SOCIAL_MEDIA": [
+    {
+      "name": "تويتر",
+      "icon": "twitter",
+      "url": "https://twitter.com",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "تويتر",
+        "url": "https://twitter.com",
+        "sameAs": "https://twitter.com/votresite"
+      }
+    },
+    {
+      "name": "فيسبوك",
+      "icon": "facebook",
+      "url": "https://facebook.com",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "فيسبوك",
+        "url": "https://facebook.com",
+        "sameAs": "https://facebook.com/votresite"
+      }
+    },
+    {
+      "name": "إنستغرام",
+      "icon": "instagram",
+      "url": "https://instagram.com",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "إنستغرام",
+        "url": "https://instagram.com",
+        "sameAs": "https://instagram.com/votresite"
+      }
+    },
+    {
+      "name": "لينكدإن",
+      "icon": "linkedin",
+      "url": "https://linkedin.com",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "لينكدإن",
+        "url": "https://linkedin.com",
+        "sameAs": "https://linkedin.com/company/votresite"
+      }
+    }
+  ]
+}

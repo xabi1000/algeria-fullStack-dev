@@ -1,0 +1,22 @@
+{
+  "title": "Analytique et Reporting",
+  "slug": "analytics-and-reporting",
+  "description": "Nous configurons des outils d'analyse et générons des rapports pour mesurer les performances.",
+  "icon": "📊",
+  "details": {
+    "overview": "Nous fournissons des analyses détaillées et des rapports personnalisés pour mesurer les performances de vos applications.",
+    "features": [
+      "Configuration de Google Analytics et outils similaires.",
+      "Génération de rapports personnalisés.",
+      "Analyse des données et recommandations stratégiques."
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Tableau",
+      "Power BI",
+      "BigQuery"
+    ],
+    "objective": "Si votre objectif est de mesurer et d'améliorer les performances de vos applications, nous pouvons vous aider avec des outils d'analyse et des rapports personnalisés."
+  },
+  "metaDescription": "Mesurez et améliorez les performances de vos applications avec nos services d'analytique et de reporting. Nous fournissons des rapports personnalisés et des insights basés sur les données."
+}

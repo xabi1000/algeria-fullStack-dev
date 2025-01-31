@@ -1,0 +1,55 @@
+{
+  "LINKS": [
+    {
+      "name": "Inicio",
+      "url": "/es/",
+      "icon": "home",
+      "title": "Inicio - Nuestra Agencia de Desarrollo Web",
+      "metaDescription": "Descubre nuestra agencia especializada en desarrollo web y soluciones digitales a medida."
+    },
+    {
+      "name": "Servicios",
+      "url": "/es/services",
+      "icon": "services",
+      "title": "Nuestros Servicios - Desarrollo Web y Aplicaciones Móviles",
+      "metaDescription": "Explora nuestros servicios en desarrollo web, aplicaciones móviles, SEO y mucho más."
+    },
+    {
+      "name": "Portafolio",
+      "url": "/es/portfolio",
+      "icon": "portfolio",
+      "title": "Portafolio - Nuestros Trabajos",
+      "metaDescription": "Descubre nuestros proyectos recientes y nuestra experiencia en desarrollo web y diseño."
+    },
+    {
+      "name": "Contacto",
+      "url": "/es/contact",
+      "icon": "contact",
+      "title": "Contáctanos - Estamos Aquí para Ayudarte",
+      "metaDescription": "Contáctanos para discutir tu proyecto o para cualquier pregunta. ¡Estamos aquí para ayudarte!"
+    }
+  ],
+
+  "SOCIAL_MEDIA": [
+    {
+      "name": "Twitter",
+      "icon": "twitter",
+      "url": "https://twitter.com"
+    },
+    {
+      "name": "Facebook",
+      "icon": "facebook",
+      "url": "https://facebook.com"
+    },
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "url": "https://instagram.com"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://linkedin.com"
+    }
+  ]
+}

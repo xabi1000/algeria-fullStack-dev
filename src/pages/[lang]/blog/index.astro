@@ -1,0 +1,45 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+const prerender = true;
+// Añade esta función al principio del archivo
+export async function getStaticPaths() {
+  return [
+    { params: { lang: "en" } },
+    { params: { lang: "es" } },
+    { params: { lang: "fr" } },
+    { params: { lang: "ar" } }
+  ];
+}
+
+interface BlogPost {
+  slug: string;
+  title: string;
+  content: string;
+  description?: string;
+  imageURL?: string;
+}
+
+const { lang } = Astro.params;
+const t = (await import(`../../../i18n/${lang}.json`)).default;
+
+const allPosts = await import.meta.glob<{ default: BlogPost }>("../../../content/**/blog/*.json");
+const postList = await Promise.all(
+  Object.entries(allPosts)
+    .filter(([path]) => path.includes(`/${lang}/`))
+    .map(async ([_, post]) => (await post()).default)
+);
+
+
+---
+
+<Layout lang={lang} title={t.blog.all_posts} description={t.blog.all_posts}>
+  <h1>{t.blog.all_posts}</h1>
+  <ul>
+    {postList.map((post) => (
+      <li>
+        <a href={`/${lang}/blog/${post.slug}`}>{post.title}</a>
+        <p>{post.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>

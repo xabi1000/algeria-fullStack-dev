@@ -1,0 +1,95 @@
+{
+  "form": {
+    "title": "اتصل بنا - تواصل معنا اليوم",
+    "fields": [
+      {
+        "label": "الاسم:",
+        "type": "text",
+        "id": "name",
+        "name": "name",
+        "required": true
+      },
+      {
+        "label": "البريد الإلكتروني:",
+        "type": "email",
+        "id": "email",
+        "name": "email",
+        "required": true
+      },
+      {
+        "label": "الرسالة:",
+        "type": "textarea",
+        "id": "message",
+        "name": "message",
+        "required": true,
+        "rows": 5
+      }
+    ],
+    "buttonText": "إرسال الرسالة",
+    "metaDescription": "استخدم نموذج الاتصال الخاص بنا للتواصل معنا. <br/>نحن هنا للإجابة على أسئلتك وتقديم المساعدة. تواصل معنا اليوم!",
+    "keywords": ["نموذج الاتصال", "تواصل معنا", "إرسال رسالة", "اتصل بنا"],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "اتصل بنا - تواصل معنا اليوم",
+      "description": "استخدم نموذج الاتصال الخاص بنا للتواصل معنا. نحن هنا للإجابة على أسئلتك وتقديم المساعدة. تواصل معنا اليوم!",
+      "url": "/contact",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "الدعم الفني",
+        "email": "info@example.com",
+        "url": "/contact"
+      }
+    }
+  },
+  "map": {
+    "title": "موقعنا - اعثر علينا على الخريطة",
+    "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462.11941964604216!2d3.0288401080208964!3d36.80358184373517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb3c0d4b1393f%3A0xb9d0d32bed6cead9!2sZeghara%2C%20Bologhine!5e0!3m2!1ses-419!2sdz!4v1738280890085!5m2!1ses-419!2sdz",
+    "altText": "خريطة تفاعلية توضح موقعنا بالقرب من جسر جولدن غيت في سان فرانسيسكو.",
+    "metaDescription": "اعثر على موقعنا بسهولة باستخدام الخريطة التفاعلية. نحن موجودون بالقرب من جسر جولدن غيت. قم بزيارتنا اليوم!",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "موقعنا - اعثر علينا على الخريطة",
+      "description": "اعثر على موقعنا بسهولة باستخدام الخريطة التفاعلية. نحن موجودون بالقرب من جسر جولدن غيت. قم بزيارتنا اليوم!",
+      "image": "https://www.example.com/images/map.jpg",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "37.77492997975921",
+        "longitude": "-122.41941558468162"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع جولدن غيت",
+        "addressLocality": "سان فرانسيسكو",
+        "addressRegion": "كاليفورنيا",
+        "postalCode": "94129",
+        "addressCountry": "الولايات المتحدة"
+      }
+    }
+  },
+  "seo": {
+    "pageTitle": "اتصل بنا - تواصل معنا لمزيد من المعلومات",
+    "metaKeywords": [
+      "اتصل بنا",
+      "خريطة الموقع",
+      "تواصل معنا",
+      "أرسل لنا رسالة",
+      "جسر جولدن غيت"
+    ],
+    "metaDescription": "تواصل معنا اليوم باستخدام النموذج السهل الاستخدام أو اعثر على موقعنا على الخريطة. نحن هنا لمساعدتك في أي استفسارات أو أسئلة.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "اتصل بنا - تواصل معنا لمزيد من المعلومات",
+      "description": "تواصل معنا اليوم باستخدام النموذج السهل الاستخدام أو اعثر على موقعنا على الخريطة. نحن هنا لمساعدتك في أي استفسارات أو أسئلة.",
+      "url": "/contact",
+      "potentialAction": {
+        "@type": "ContactPoint",
+        "contactType": "الدعم الفني",
+        "email": "info@example.com",
+        "url": "/contact"
+      }
+    }
+  }
+}

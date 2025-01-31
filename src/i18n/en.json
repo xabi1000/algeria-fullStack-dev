@@ -1,0 +1,9 @@
+{
+    "header": {
+      "title": "Welcome!",
+      "blog": "Blog"
+    },
+    "blog": {
+      "all_posts": "All Posts"
+    }
+  }

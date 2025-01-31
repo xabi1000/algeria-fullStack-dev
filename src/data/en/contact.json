@@ -1,0 +1,49 @@
+{
+  "form": {
+    "title": "Contact Us - Get in Touch Today",
+    "fields": [
+      {
+        "label": "Name:",
+        "type": "text",
+        "id": "name",
+        "name": "name",
+        "required": true
+      },
+      {
+        "label": "Email:",
+        "type": "email",
+        "id": "email",
+        "name": "email",
+        "required": true
+      },
+      {
+        "label": "Message:",
+        "type": "textarea",
+        "id": "message",
+        "name": "message",
+        "required": true,
+        "rows": 5
+      }
+    ],
+    "buttonText": "Send Message",
+    "metaDescription": "Use our contact form to get in touch with us. We are here to answer your questions and provide assistance. <br/> Reach out today!",
+    "keywords": ["contact form", "get in touch", "send message", "contact us"]
+  },
+  "map": {
+    "title": "Our Location - Find Us on the Map",
+    "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462.11941964604216!2d3.0288401080208964!3d36.80358184373517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb3c0d4b1393f%3A0xb9d0d32bed6cead9!2sZeghara%2C%20Bologhine!5e0!3m2!1ses-419!2sdz!4v1738280890085!5m2!1ses-419!2sdz",
+    "altText": "Interactive map showing our location near the Golden Gate Bridge in San Francisco.",
+    "metaDescription": "Find our location easily using our interactive map. We are conveniently located near the Golden Gate Bridge. Visit us today!"
+  },
+  "seo": {
+    "pageTitle": "Contact Us - Reach Out for More Information",
+    "metaKeywords": [
+      "contact us",
+      "location map",
+      "get in touch",
+      "send us a message",
+      "Golden Gate Bridge"
+    ],
+    "metaDescription": "Contact us today using our easy-to-use form or find our location on the map. We are here to help you with any questions or inquiries."
+  }
+}

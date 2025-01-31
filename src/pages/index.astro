@@ -1,0 +1,14 @@
+<!-- ---
+import Layout from "../layouts/Layout.astro";
+const { lang } = Astro.params;
+
+// 3. Cargar traducciones
+const t = (await import(`../i18n/${lang ?? "en"}.json`)).default;
+
+const data = (await import(`../data/${lang}/services.json`)).default;
+
+---
+
+<Layout lang={lang} title={t.header.title} description={t.header.title}>
+	<h1>{t.header.title}</h1>
+</Layout> -->

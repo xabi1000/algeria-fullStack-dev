@@ -1,0 +1,22 @@
+{
+  "title": "Analítica y Reportes",
+  "slug": "analytics-and-reporting",
+  "description": "Configuramos herramientas de análisis y generamos reportes para medir el rendimiento.",
+  "icon": "📊",
+  "details": {
+    "overview": "Proporcionamos análisis detallados y reportes personalizados para medir el rendimiento de tus aplicaciones.",
+    "features": [
+      "Configuración de Google Analytics y herramientas similares.",
+      "Generación de reportes personalizados.",
+      "Análisis de datos y recomendaciones estratégicas."
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Tableau",
+      "Power BI",
+      "BigQuery"
+    ],
+    "objective": "Si tu objetivo es medir y mejorar el rendimiento de tus aplicaciones, podemos ayudarte con herramientas de análisis y reportes personalizados."
+  },
+  "metaDescription": "Mide y mejora el rendimiento de tus aplicaciones con nuestros servicios de analítica y reportes. Proporcionamos reportes personalizados y análisis basados en datos."
+}
