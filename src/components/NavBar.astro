@@ -2,7 +2,7 @@
 import Icon from './Icon.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 const { lang } = Astro.params;
-const dataNavLang = await import(/* @vite-ignore */ `../data/${lang}/nav.json`);
+const dataNavLang = await import(`../data/${lang}/nav.json?raw`).then(m => JSON.parse(m.default));
 const {LINKS} = dataNavLang;
 ---
 

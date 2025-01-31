@@ -27,3 +27,4 @@ jobs:
           project: algeria-fullStack-dev # TODO: replace with Deno Deploy project name
           entrypoint: server/entry.mjs
           root: dist
+# ddp_PNQ6dLeqjT9grLnaDsfWWRYewx4fK11sCr81

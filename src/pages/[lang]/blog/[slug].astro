@@ -2,7 +2,7 @@
 // src/pages/[lang]/blog/[slug].astro
 
 import Layout from "../../../layouts/Layout.astro";
-const prerender = true;
+const prerender = false;
 // 1. Definición de tipos
 type Language = "en" | "es" | "fr" | "ar";
 interface BlogPost {
@@ -86,10 +86,10 @@ let post: BlogPost;
 let t: Translation;
 
 try {
-  const postModule = await import(`../../../content/${lang}/blog/${slug}.json`);
-  post = postModule.default;
-
-  const translationModule = await import(`../../../i18n/${lang}.json`);
+  const postModule = await import(`../../../content/${lang}/blog/${slug}.json?raw`).then(m => JSON.parse(m.default));
+  post = postModule;
+// const dataNavLang = await import(`../data/${lang}/nav.json?raw`).then(m => JSON.parse(m.default));
+  const translationModule = await import(`../../../i18n/${lang}.json?raw`).then(m => JSON.parse(m.default));
   t = translationModule.default;
 
   // Validación final de contenido

@@ -17,7 +17,7 @@ const { lang } = Astro.params;
 // 3. Cargar traducciones
 const t = (await import(`../../i18n/${lang}.json`)).default;
 const data = (await import(`../../data/${lang}/portfolio.json`)).default;
-const prerender = true;
+const prerender = false;
 
 ---
 
