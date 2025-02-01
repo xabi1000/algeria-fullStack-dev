@@ -1,34 +1,32 @@
 name: Deploy
-on:
-  push:
-    branches: main
-  pull_request:
-    branches: main
+on: [push]
 
 jobs:
   deploy:
-    name: Deploy
     runs-on: ubuntu-latest
-
     permissions:
-      id-token: write # Needed for auth with Deno Deploy
-      contents: read # Needed to clone the repository
+      id-token: write
+      contents: read
 
     steps:
-      - name: Clonar el repositorio
+      - name: Configurar Node.js y pnpm
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          pnpm-version: 8
+
+      - name: Clonar repositorio
         uses: actions/checkout@v4
 
-      # ¿No usas npm? Cambia `npm ci` por `yarn install` o `pnpm i`.
-      - name: Instalar las dependencias
-        run: pnpm i
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
 
-      # ¿No usas npm? Cambia `npm run build` por `yarn build` o `pnpm run build`.
-      - name: Construir Astro
+      - name: Construir proyecto
         run: pnpm run build
 
-      - name: Subir a Deno Deploy
+      - name: Desplegar en Deno
         uses: denoland/deployctl@v1
         with:
-          project: my-deno-project # TODO: sustituir por el nombre del proyecto Deno Deploy
+          project: algeria-fullstack-dev
           entrypoint: server/entry.mjs
           root: dist
